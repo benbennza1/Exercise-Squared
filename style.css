@@ -3,22 +3,38 @@ body {
     padding: 0;
     background-color: #353535;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+
+      -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently*/
 }
 
-img {
-    width: 20%;
-    height: 20%;
+.platy {
+    width: 15%;
+    height: 15%;
     float: right;
     margin: 10px;
 }
 
+.giffooter {
+    width: 120%;
+    position: relative;
+    z-index: -1;
+    left:-135em;
+}
 .exercise {
     text-align: center;
     font-size: 80px;
 
     border-radius: 25px;
     border: #73ad21;
-    background-color: #73ad21;
+    background-color: darkcyan;
+
+    padding: 5px;
 
     width: 100%;
 }
@@ -26,9 +42,9 @@ img {
 .button {
     text-align: center;
     font-size: 50px;
-    width: 100%;
+    width: 50%;
     border-radius: 25px;
-    background-color: gray;
+    background-color: darkorange;
 }
 
 .padding {
@@ -36,7 +52,7 @@ img {
 }
 
 .label {
-    color: white;
+    color: gray;
     font-size: 30px;
 }
 

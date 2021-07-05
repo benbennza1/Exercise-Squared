@@ -30,7 +30,7 @@
                 'Neck rolls',
                 'Seal clap',
                 'Reach-for-the-sky stretch',
-                'Double chin 5 times',
+                'Double chin',
                 'Pull your head to one side'
             ];
 
@@ -62,17 +62,24 @@
             setLowerExercise();
         }
 
-        $(document).ready(function () {
-            setUpperExercise();
-            setLowerExercise();
+        function moveGifRight() {
+            $(".giffooter").show();
+            $(".giffooter").stop();
+            $(".giffooter").css('left', '-135em');
+            $(".giffooter").animate({
+                'left': '+=135em'
+            }, 30000, function() {$(".giffooter").hide();});
+        }
 
+        $(document).ready(function () {
             $('.random').on('click', function () {
                 spin();
+                moveGifRight();
             });
         });
     </script>
     <body>
-        <img src="platy.png" />
+        <img class="platy" src="platy.png" />
         <div class="container">
             <div class="label">Upper Body</div>
             <div class="padding upper exercise">Upper Body Exercise</div>
@@ -80,5 +87,6 @@
             <div class="padding lower exercise">Lower Body Exercise</div>
             <button class="padding random button">Hit me up with pain!</button>
         </div>
+        <img class="giffooter" src="longNyanCat.gif"/>
     </body>
 </html>
