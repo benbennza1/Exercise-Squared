@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercise^2</title>
+        <meta name="description" content="My template" />
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- style -->
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function getRandomOption(inputArr) {
+            return inputArr[Math.floor(Math.random() * inputArr.length)];
+        }
+
+        function setUpperExercise() {
+            var options = [
+                'Jumping jacks',
+                'Head rolls',
+                'Wrists rolls',
+                'Stretch triceps above head',
+                'Stretch arm across chest',
+                'T pose',
+                'Shoulder rolls',
+                'Finger glasses',
+                'Pull ears out, stick out tongue.',
+                'Tap head and rub belly',
+                'Lick elbow',
+                'Neck rolls',
+                'Seal clap',
+                'Reach-for-the-sky stretch',
+                'Double chin 5 times',
+                'Pull your head to one side'
+            ];
+
+            $('.upper').text(getRandomOption(options));
+        }
+
+        function setLowerExercise() {
+            var options = [
+                'Jumping jacks',
+                'Lunges',
+                'Squats',
+                'Balance on left leg',
+                'Balance on right leg',
+                'Bend over and touch the ground',
+                'Lateral lunge',
+                'Calf raises',
+                'Knee raises',
+                'Wiggle yo toes',
+                'Moon walking',
+                'Run in place',
+                'Walk heel to toe',
+                'March in place'
+            ];
+            $('.lower').text(getRandomOption(options));
+        }
+
+        function spin() {
+            setUpperExercise();
+            setLowerExercise();
+        }
+
+        $(document).ready(function () {
+            setUpperExercise();
+            setLowerExercise();
+
+            $('.random').on('click', function () {
+                spin();
+            });
+        });
+    </script>
+    <body>
+        <img src="platy.png" />
+        <div class="container">
+            <div class="label">Upper Body</div>
+            <div class="padding upper exercise">Upper Body Exercise</div>
+            <div class="label">Lower Body</div>
+            <div class="padding lower exercise">Lower Body Exercise</div>
+            <button class="padding random button">Hit me up with pain!</button>
+        </div>
+    </body>
+</html>

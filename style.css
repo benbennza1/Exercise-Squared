@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #353535;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    float: right;
+    margin: 10px;
+}
+
+.exercise {
+    text-align: center;
+    font-size: 80px;
+
+    border-radius: 25px;
+    border: #73ad21;
+    background-color: #73ad21;
+
+    width: 100%;
+}
+
+.button {
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: gray;
+}
+
+.padding {
+    margin: 20px;
+}
+
+.label {
+    color: white;
+    font-size: 30px;
+}
+
+.container {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
