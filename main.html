@@ -34,7 +34,9 @@
                 'Pull your head to one side'
             ];
 
-            $('.upper').text(getRandomOption(options));
+            $('.upper-text').fadeOut(500, function (){ 
+                $(this).text(getRandomOption(options)).fadeIn(500);
+            });
         }
 
         function setLowerExercise() {
@@ -54,7 +56,9 @@
                 'Walk heel to toe',
                 'March in place'
             ];
-            $('.lower').text(getRandomOption(options));
+            $('.lower-text').fadeOut(500, function (){ 
+                $(this).text(getRandomOption(options)).fadeIn(500);
+            });
         }
 
         function spin() {
@@ -82,9 +86,9 @@
         <img class="platy" src="platy.png" />
         <div class="container">
             <div class="label">Upper Body</div>
-            <div class="padding upper exercise">Upper Body Exercise</div>
+            <div class="padding upper exercise"><div class="upper-text">Upper Body Exercise</div></div>
             <div class="label">Lower Body</div>
-            <div class="padding lower exercise">Lower Body Exercise</div>
+            <div class="padding lower exercise"><div class="lower-text">Lower Body Exercise</div></div>
             <button class="padding random button">Hit me up with pain!</button>
         </div>
         <img class="giffooter" src="longNyanCat.gif"/>
