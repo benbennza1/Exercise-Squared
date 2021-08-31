@@ -1,6 +1,6 @@
 # Exercise-Squared
  An upper/lower body exercise randomizer
- Yall all know you been lacking dem exercises!
+ Y'all know you been lacking dem exercises!
  
  I have created this for office to get their butts off their chairs, and have some fun along with it!
  
